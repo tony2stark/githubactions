@@ -11,3 +11,14 @@ jobs:
         run: |
           node -v
           npm -v
+  second-job-mac_os:
+    runs-on: macos-latest
+    steps:
+      - name: vamsi's output
+        run: sw_vers
+  3rd-job-windows:
+    runs-on: windows-latest
+    needs: run-shell-commands
+    steps:
+      - name: 3rd_output
+        run: Write-Output "success"
