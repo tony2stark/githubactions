@@ -9,8 +9,10 @@ jobs:
         run: echo "hello world"
       - name: multiline command
         run: |
+          pwd
           node -v
           npm -v
+
   second-job-mac_os:
     runs-on: macos-latest
     steps:
