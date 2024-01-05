@@ -22,3 +22,5 @@ jobs:
     steps:
       - name: 3rd_output
         run: Write-Output "success"
+      - name: condition(error)
+        run: doesnot exist
