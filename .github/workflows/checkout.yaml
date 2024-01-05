@@ -1,0 +1,11 @@
+name: workflow for checkout
+on: [push]
+jobs:
+  job-checkout:
+    runs-on: ubuntu-latest
+    steps:
+      - name: check the files
+        run: ls -la
+      - uses: actions/checkout@v3
+      - name: chekout-action
+        run: ls -la
