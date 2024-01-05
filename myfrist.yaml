@@ -1,4 +1,4 @@
-name: myfirst
+name: myfirst-1
 on: [push]
 
 jobs:
