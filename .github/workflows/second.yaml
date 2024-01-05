@@ -12,6 +12,7 @@ jobs:
           pwd
           node -v
           npm -v
+          mkdir vamsi
 
   second-job-mac_os:
     runs-on: macos-latest
