@@ -1,4 +1,4 @@
-name: events trigger
+name: events-trigger
 on:
   push:
   pull_request:
