@@ -1,0 +1,20 @@
+name: expressions and contexts
+on: [push, pull_request, issues]
+jobs:
+  expressions:
+    runs-on: ubuntu-latest
+    steps:
+      - name: expressions-flow
+        id: expression
+        run: |
+          echo ${{  6  }}
+          echo ${{ 'this is true' }}
+          echo ${{ true }}
+          echo ${{ null }}
+          echo ${{ 5>6 }}
+          echo ${{ true && false }}
+      - name: contexts
+        run: |
+          echo '${{ toJson(github) }}'
+          echo '${{ toJson(secrets) }}'
+          echo '${{ toJson(steps)}}'
