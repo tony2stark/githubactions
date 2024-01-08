@@ -8,4 +8,4 @@ jobs:
   workflow-trigger-when-event-workflow-is-completed:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "i was triggered bcoz of the events-trigger is completed"
+      - run: echo "i was triggered bcoz of the events-trigger is c-ompleted"
